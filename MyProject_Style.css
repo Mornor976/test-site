@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    
+    
+}
+
+header {
+    background: linear-gradient(to right, #35424a, #007bff);
+    color: rgb(250, 247, 247);
+    padding: 20px 0;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    max-width: 100%; /* Adjusted to fit within the section */
+    height: auto;
+}
+
+main {
+    padding: 20px;
+}
+
+
+/* Media query for larger screens */
+
+section {
+    margin-bottom: 20px;
+    background: white;
+    padding: 15px; /* Reduced padding for smaller cards */
+    border-radius: 8px; /* Slightly reduced border radius */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Reduced shadow effect */
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align:center;
+}
+
+h2 {
+    color: #35424a;
+}
+
+@media only screen and (max-width: 599px) {
+   h1 {
+       font-size: 1.8em;
+   }
+
+   .nav ul {
+       display: flex; 
+       flex-direction: column; 
+       align-items: center; 
+   }
+
+   .nav-link {
+       margin-bottom: 10px; 
+       width: auto; 
+       flex-grow: 6; 
+       text-align: center; 
+   }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+   h1 {
+       font-size: 2em; 
+   }
+}
+
+@media only screen and (min-width: 1300px) {
+   h1 {
+       font-size: 3em; 
+   }
+   h2 {
+       font-size: em; /* Slightly reduced size for h2 */
+   }
+   p {
+       font-size: 1.2em; /* Reduced paragraph size */
+   }
+   .nav-link {
+       margin-right: 10px; 
+   }
+   body {
+    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    
+        background-image: url("https://avatars.mds.yandex.net/i?id=bae71f6abb329654952c1d77a40bf00f_l-6275626-images-thumbs&n=13"); 
+        background-size:cover; 
+        background-position: center;
+        background-repeat: repeat;
+        
+        
+        
+}
+}
